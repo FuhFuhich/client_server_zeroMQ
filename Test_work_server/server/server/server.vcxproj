@@ -128,12 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Lobby.cpp" />
+    <ClCompile Include="RestApi.cpp" />
     <ClCompile Include="server.cpp" />
+    <ClCompile Include="ToJson.cpp" />
     <ClCompile Include="TxtReader.cpp" />
     <ClCompile Include="Validation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Lobby.h" />
+    <ClInclude Include="RestApi.h" />
+    <ClInclude Include="ToJson.h" />
     <ClInclude Include="TxtReader.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="Validation.h" />

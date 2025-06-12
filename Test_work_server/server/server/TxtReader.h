@@ -17,5 +17,5 @@ private:
 public:
 	TxtReader();
 	void read_txt();
-	std::set<User> get_unique_users();
+	std::set<User> get_unique_users() const;
 };

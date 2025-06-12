@@ -33,7 +33,7 @@ void TxtReader::read_txt()
 	}
 }
 
-std::set<User> TxtReader::get_unique_users()
+std::set<User> TxtReader::get_unique_users() const
 {
 	return unique_users;
 }
