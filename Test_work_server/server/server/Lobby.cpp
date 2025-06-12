@@ -2,7 +2,7 @@
 
 Lobby::Lobby(zmq::socket_t& publisher) : publisher(publisher) {}
 
-void Lobby::send_message(std::string msg)
+void Lobby::send_message(const std::string& msg)
 {
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
 

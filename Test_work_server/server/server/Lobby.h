@@ -3,7 +3,6 @@
 #include <string>
 #include <zmq.hpp>
 #include <iostream>
-#include <assert.h>
 #include <thread>
 #include <chrono>
 
@@ -14,5 +13,5 @@ private:
 
 public:
 	Lobby(zmq::socket_t& publisher);
-	void send_message(std::string msg);
+	void send_message(const std::string& msg);
 };
