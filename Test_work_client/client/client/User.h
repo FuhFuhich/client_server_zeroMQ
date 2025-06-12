@@ -13,9 +13,4 @@ struct User {
 	{
 		return std::tie(name, second_name, birthday) < std::tie(other.name, other.second_name, other.birthday);
 	}
-
-	std::string cast_to_string() const
-	{
-		return std::to_string(key) + " " + name + " " + second_name + " " + birthday;
-	}
 };

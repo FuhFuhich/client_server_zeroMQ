@@ -8,7 +8,7 @@ int main()
     static const int k_number_of_threads = 2;
     zmq::context_t context(k_number_of_threads);
     zmq::socket_t subscriber(context, zmq::socket_type::sub);
-    subscriber.connect("tcp://localhost:5555"); // Заменить позже на айпишник сервера
+    subscriber.connect("tcp://localhost:5555");
 
     subscriber.set(zmq::sockopt::subscribe, "");
 

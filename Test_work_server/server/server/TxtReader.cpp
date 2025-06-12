@@ -31,9 +31,9 @@ void TxtReader::read_txt()
 			unique_users.insert(user);
 		}
 	}
+}
 
-	for (const auto& nya : unique_users)
-	{
-		std::cout << nya.key << " " << nya.name << " " << nya.second_name << " " << nya.birthday << "\n";
-	}
+std::set<User> TxtReader::get_unique_users()
+{
+	return unique_users;
 }

@@ -130,7 +130,6 @@
     <ClCompile Include="Lobby.cpp" />
     <ClCompile Include="server.cpp" />
     <ClCompile Include="TxtReader.cpp" />
-    <ClCompile Include="User.cpp" />
     <ClCompile Include="Validation.cpp" />
   </ItemGroup>
   <ItemGroup>

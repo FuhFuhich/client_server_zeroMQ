@@ -11,5 +11,10 @@ int main()
     TxtReader txtReader;
     txtReader.read_txt();
 
-    //Lobby lobby(publisher);
+    Lobby lobby(publisher);
+
+    for (const auto& nya : txtReader.get_unique_users())
+    {
+        lobby.send_message(nya.cast_to_string());
+    }
 }
