@@ -1,4 +1,5 @@
 ﻿#include "Lobby.h"
+#include "TxtReader.h"
 
 int main()
 {
@@ -7,5 +8,8 @@ int main()
     zmq::socket_t publisher(context, zmq::socket_type::pub);
     publisher.bind("tcp://*:5555");
 
-    Lobby lobby(publisher);
+    TxtReader txtReader;
+    txtReader.read_txt();
+
+    //Lobby lobby(publisher);
 }
