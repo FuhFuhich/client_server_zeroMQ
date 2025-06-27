@@ -2,14 +2,14 @@
 
 bool Validation::validate_key(const int& key)
 {
-	return key >= 0 ? true : false;
+	return key >= 0;
 }
 
 bool Validation::validate_name(const std::string& name)
 {
 	std::regex name_pattern(R"([A-Za-zÀ-ßà-ÿ¨¸]+$)");
 
-	return std::regex_match(name, name_pattern) ? true : false;
+	return std::regex_match(name, name_pattern);
 }
 
 bool Validation::validate_date(const std::string& date)

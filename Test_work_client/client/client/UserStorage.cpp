@@ -1,9 +1,10 @@
 #include "UserStorage.h"
+#include <utility>
 
 void UserStorage::add(const User& user, const std::string& source)
 {
 	std::lock_guard<std::mutex> lock(mtx);
-	source == "zmq" ? zmq_users.push_back(user) : http_users.push_back(user);
+	source == "zmq" ? zmq_users.push_back(std::move(user)) : http_users.push_back(user);
 }
 
 void UserStorage::sort_by_fio()
