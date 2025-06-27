@@ -21,7 +21,7 @@ int main()
     Lobby lobby(subscriber);
 
     std::thread zmq_thread([&]() {
-        for (int i = 0; i < 6; ++i)
+        while (true)
         {
             lobby.get_messages(storage);
         }

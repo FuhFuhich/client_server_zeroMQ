@@ -14,5 +14,6 @@ nlohmann::json ToJson::create_users_json(const std::set<User>& users)
 		});
 	}
 
+	j.dump(4);
 	return j;
 }

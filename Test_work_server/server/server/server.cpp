@@ -24,7 +24,7 @@ int main()
     // RestAPI
     RestApi rest_api(txt_reader);
     rest_api.start();
-
+     
     zmq_thread.join();
     rest_api.stop();
 }
